@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Patient Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="patients">
+        <div class="patient-details">
+            <h2>View patient</h2>
+            <div class="patient-info">
+                <h3>S.Meena, F/23</h3>
+                <p>Patient ID: 87 20200727153457</p>
+                <div class="goal-reached">
+                    <div class="arc-container">
+                        <div class="arc-outline">
+                            <div class="arc">
+                                <div class="arc-inner">
+                                    <div class="goal-progress" data-progress="40%"></div>
+                                </div>
+                                <div class="percentage">40%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goal-labels">
+                        <div class="label-container">
+                            <span>EMG</span>
+                            <canvas class="graph" id="emgGraph1" width="60" height="30"></canvas>
+                        </div>
+                        <div class="label-container">
+                            <span>ROM</span>
+                            <canvas class="graph" id="romGraph1" width="60" height="30"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <ul class="contact-info">
+                    <li><strong>Phone no.:</strong> 8022334455</li>
+                    <li><strong>Mail ID:</strong> meenarabinsachin2@gmail.com</li>
+                    <li><strong>Affected side:</strong> Bilateral</li>
+                    <li><strong>Condition:</strong> Ortho</li>
+                    <li><strong>Speciality:</strong> Osteoarthritis</li>
+                </ul>
+                <div class="separator-line"></div>
+                <div class="medical-history">
+                    <h4>Medical history</h4>
+                    <p>Hypertension, DM, Hypothyroidism</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat the patient-details block for other patients -->
+
+        <div class="patient-details">
+            <h2>View patient</h2>
+            <div class="patient-info">
+                <h3>R. Kumar, M/45</h3>
+                <p>Patient ID: 88 20200801123456</p>
+                <div class="goal-reached">
+                    <div class="arc-container">
+                        <div class="arc-outline">
+                            <div class="arc">
+                                <div class="arc-inner">
+                                    <div class="goal-progress" data-progress="60%"></div>
+                                </div>
+                                <div class="percentage">60%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goal-labels">
+                        <div class="label-container">
+                            <span>EMG</span>
+                            <canvas class="graph" id="emgGraph2" width="60" height="30"></canvas>
+                        </div>
+                        <div class="label-container">
+                            <span>ROM</span>
+                            <canvas class="graph" id="romGraph2" width="60" height="30"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <ul class="contact-info">
+                    <li><strong>Phone no.:</strong> 9022334455</li>
+                    <li><strong>Mail ID:</strong> r.kumar@example.com</li>
+                    <li><strong>Affected side:</strong> Unilateral</li>
+                    <li><strong>Condition:</strong> Rheumatoid Arthritis</li>
+                    <li><strong>Speciality:</strong> Joint Pain</li>
+                </ul>
+                <div class="separator-line"></div>
+                <div class="medical-history">
+                    <h4>Medical history</h4>
+                    <p>Diabetes, Hyperthyroidism</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more patient-details blocks as needed -->
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
